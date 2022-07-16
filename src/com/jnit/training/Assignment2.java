@@ -14,9 +14,6 @@ public class Assignment2 {
 		System.out.println("employeeId="+emp.employeeSalary );
 
 		Employee emp1= new Employee();
-		emp.employeeId = 123;
-		emp.employeeName = "Sahana";
-		emp.employeeSalary = 20000;
 		System.out.println("employeeId="+emp1.employeeId);
 		System.out.println("employeeName="+emp1.employeeName);
 		System.out.println("employeeRole="+Employee.employeeRole);
