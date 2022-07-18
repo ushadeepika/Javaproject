@@ -1,4 +1,4 @@
-package com.jnit.training;
+package com.jnit.training.methods;
 class Bank{
 	void availableForms() {
 		System.out.println("1.Deposit form\n2.Withdrawal Form\n3.Transfer Form");

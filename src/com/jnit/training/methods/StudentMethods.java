@@ -1,4 +1,4 @@
-package com.jnit.training;
+package com.jnit.training.methods;
 class Library{
 	
 	void search() {

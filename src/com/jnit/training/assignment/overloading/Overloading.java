@@ -1,4 +1,4 @@
-package com.jnit.training;
+package com.jnit.training.assignment.overloading;
 
 class Person {
 	void setPersonName(String firstname) {

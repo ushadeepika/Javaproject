@@ -1,4 +1,4 @@
-package com.jnit.training;
+package com.jnit.training.variables;
 
 public class Patient {
 	String patient_name;

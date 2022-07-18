@@ -1,4 +1,4 @@
-package com.jnit.training;
+package com.jnit.training.assignment.overloading;
 class GovernmentBank{
 	
 	void availableForms() {
