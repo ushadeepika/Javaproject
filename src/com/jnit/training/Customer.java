@@ -6,9 +6,9 @@ class Bank{
 	void submitForm(String formName) {
 		System.out.println("Received form for "+formName);
 	}
-	int deposit(int amount) {
-		System.out.println("Deposited Amount");
-		return amount;
+	String deposit(int amount) {
+		System.out.println("Deposited Amount :"+amount );
+		return "success";
 	}
 	boolean provideReceipt() {
 		return true;
@@ -21,7 +21,7 @@ public class Customer {
 		Bank sbi = new Bank();
 		sbi.availableForms();
 		sbi.submitForm("Deposit");
-        System.out.println("Amount deposited= "+sbi.deposit(200));
+        System.out.println("Transaction status="+sbi.deposit(200));
         System.out.println("providereceipt="+sbi.provideReceipt());
 
 	}
