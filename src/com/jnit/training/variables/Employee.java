@@ -6,4 +6,5 @@ public class Employee {
  static String employeeRole;
  int employeeSalary;
  
+ 
 }

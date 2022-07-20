@@ -14,6 +14,7 @@ public class Assignment1 {
         patient.patient_name="chris";
         patient.patientId=123;
         patient.phone_number="12345678";
+        
         System.out.println("patient_name : "+ patient.patient_name);
         System.out.println("specalisation : "+ patient.patientId);
         System.out.println("hospital : "+ Doctor.hospital);
