@@ -1,7 +1,7 @@
 package com.jnit.training.abstractClass;
 
 abstract class Animal {
-	abstract void lifeSpan();
+	 abstract void lifeSpan();
 
 	void breadth() {
 		System.out.println("Takes the oxygen");
