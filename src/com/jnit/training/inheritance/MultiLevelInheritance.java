@@ -10,7 +10,7 @@ class Dog extends Animal{
 		System.out.println("dog is barking");
 	}
 }
-class Cow extends Dog{
+class Puppy extends Dog{
 	void sleep() {
 		System.out.println("cow is sleeping");
 	}
@@ -21,10 +21,10 @@ class Cow extends Dog{
 public class MultiLevelInheritance {
 
 	public static void main(String[] args) {
-		Cow cow = new Cow();
-		cow.eat();
-		cow.bark();
-		cow.sleep();
+		Puppy pup = new Puppy();
+		pup.eat();
+		pup.bark();
+		pup.sleep();
 		
 		
 
