@@ -2,10 +2,11 @@ package com.jnit.training.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DatabaseConnection {
+public class ExecuteQuery {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -16,16 +17,20 @@ public class DatabaseConnection {
 		if(connection!=null)
 			System.out.println("connection established");
 		Statement statement=connection.createStatement();
-		int x=statement.executeUpdate("insert into Employee values(1237,'fahal','ferran',123000,'Wipro','database engineer')");
-        if(x!=0)
-        	System.out.println("record inserted");
-        String sql =  "update Employee set LastName='Bodapu',Salary=170000 where PERSONID = 1255" ;
-            statement.executeUpdate(sql);
-            System.out.println("updated");
-            String a = "Delete from Employee where PERSONID= '1237'";
-            statement.executeUpdate(a);
-            System.out.println("Deleted");
-           
+		ResultSet rs =statement.executeQuery("select  * from Employee");
+		 while (rs.next()) {
+			 System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3)+" "+rs.getInt(4)+" "+rs.getString(5)+" "+rs.getString(6));
+		 }
+		 ResultSet rs1 =statement.executeQuery("select LastName,CompanyName from Employee");
+		 while (rs1.next()) {
+			 System.out.println(rs1.getString(1)+" "+rs1.getString(2));
+		 }
+		 ResultSet rs2 =statement.executeQuery("select * from Employee where PERSONID =1234");
+		 while (rs2.next()) {
+			 System.out.println(rs2.getString("PERSONID"));
+		 }
+		 }
+
 	}
 
-}
+
